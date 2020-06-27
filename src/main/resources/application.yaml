@@ -1,0 +1,6 @@
+server:
+  port: ${SERVER_PORT:}
+
+logging:
+  level:
+    root: INFO
