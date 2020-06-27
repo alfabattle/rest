@@ -6,7 +6,7 @@
                     pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable"/>
         </Console>
 
-        <File name="File" fileName="logs/app.log">
+        <File name="File" fileName="${env:LOG_DIR}/app.log">
             <PatternLayout pattern="%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %p %m%n"/>
         </File>
 
